@@ -84,13 +84,13 @@ int readPing(){
   return cm; 
 } 
  
-void moveStop(){ 
-   
-  digitalWrite(RightMotorForward, LOW); 
-  digitalWrite(LeftMotorForward, LOW); 
-  digitalWrite(RightMotorBackward, LOW); 
-  digitalWrite(LeftMotorBackward, LOW); 
-   delay(50); 
+void moveStop(){
+
+digitalWrite(RightMotorForward, LOW);
+digitalWrite(LeftMotorForward, LOW);
+digitalWrite(RightMotorBackward, LOW);
+digitalWrite(LeftMotorBackward, LOW);
+delay(50);
 } 
  
 void moveForward(){ 
