@@ -1,11 +1,11 @@
-# Fire-Fighting-Rescuers-Eye-Bot
+# Fire-Fighting-Rescuers-Eye-Bot-project
 #include <SoftwareSerial.h>  
 #include <Servo.h>         
 #include <NewPing.h> 
 const int HC_06_TXD = 5;  
 const int HC_06_RXD = 6;  
 SoftwareSerial bluetooth(HC_06_TXD, HC_06_RXD);  
- char datainput,dataoutput;         
+char datainput,dataoutput;         
 const int LeftMotorForward = 9; 
 const int LeftMotorBackward = 10; 
 const int RightMotorForward = 8; 
@@ -20,10 +20,10 @@ int frontv,leftv,rightv;
 #define maximum_distance 200 
 boolean goesForward = false; 
 int distance; 
- int distanceRight = 0; 
-  int distanceLeft = 0; 
-  char command; 
-  int mode; 
+int distanceRight = 0; 
+int distanceLeft = 0; 
+char command; 
+int mode; 
    
 NewPing sonar(trig_pin, echo_pin, maximum_distance); 
 Servo servo_motor;  
